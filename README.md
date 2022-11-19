@@ -192,3 +192,16 @@ db_file = "/etc/chainflip/data.db"
 ![image](https://user-images.githubusercontent.com/101462877/202869083-9c060b45-1f23-411c-b50b-18d4d0bacfba.png)
 
 
+## Node'umuzu başlatalım. Güncel bloğa ulaştıktan sonra devam edelim. GÜNCEL BLOĞA ULAŞMADAN DEVAM ETMEYELİM.
+            
+```
+sudo systemctl start chainflip-node
+tail -f /var/log/chainflip-node.log
+```
+            
+Güncel Blok: [Explorer](https://blocks-perseverance.chainflip.io/)
+            
+![image](https://user-images.githubusercontent.com/101462877/202870551-4e4d5198-b6e7-44a7-b706-8c735cc72b10.png)
+            
+            
+
