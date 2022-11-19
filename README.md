@@ -204,4 +204,34 @@ Güncel Blok: [Explorer](https://blocks-perseverance.chainflip.io/)
 ![image](https://user-images.githubusercontent.com/101462877/202870551-4e4d5198-b6e7-44a7-b706-8c735cc72b10.png)
             
             
+## Node'umuz GÜNCEL BLOĞA ULAŞTIKTAN SONRA  Chainflip Engine'i başlatacağız. Sırasıyla komutları girelim.
+            
+```
+sudo systemctl start chainflip-engine
+```
+            
+```
+sudo systemctl enable chainflip-node
+```
+```
+sudo systemctl enable chainflip-engine
+```
+Log'lara bakalım.
+```
+tail -f /var/log/chainflip-engine.log
+```
+            
+# Node'umuzu kurduk. Şimdi test tokenlarımızı stake edelim. [Chainflip Stake](https://stake-perseverance.chainflip.io/) sayfasına giderek private key'ini kullandığımız metamask cüzdanını bağlıyoruz.
+            
+![image](https://user-images.githubusercontent.com/101462877/202871128-72384ce7-e484-4371-8f6f-65fe080335e7.png)
+            
+## `Add node`'a tıklayalım ve daha öncesinde kenara not ettiğimiz `Validator Public Key`'i yazalım, stake miktarını max yapalım.
+            
+Hocam nerede bu Validator Public Key derseniz, bir alttaki görsele bakın.
+    
+![image](https://user-images.githubusercontent.com/101462877/202871237-4716ceb7-0dd3-43c2-9fde-86a9b33aaf66.png)
+ 
+![image](https://user-images.githubusercontent.com/101462877/202871202-df11d000-9a3a-4cde-b399-1d2a61467b2d.png)
 
+
+            
