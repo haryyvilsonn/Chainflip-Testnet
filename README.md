@@ -19,8 +19,23 @@ NODE TİPİ | CPU     | RAM      | SSD     |
 - [Discord](https://discord.gg/2B5w7FXK8h)
 
 # 1) Birçok şeyi manuel girmeniz gerektiği için script yazmak anlamsız olacaktı, direkt manuel kuruyoruz.
+            
+## Kuruluma başlayalım. Gerekli portu açalım.
 
-## Kuruluma başlayalım. Sunucuyu güncelleyelim.
+```
+sudo su
+cd
+```
+Burada sorduğu soruya `y` diyoruz.
+```            
+sudo ufw enable
+```
+```            
+sudo ufw allow 9944
+sudo ufw allow 9944/tcp
+```
+
+## Sunucuyu güncelleyelim.
 
 ```
 sudo apt update && sudo apt upgrade -y
