@@ -233,5 +233,41 @@ Hocam nerede bu Validator Public Key derseniz, bir alttaki görsele bakın.
  
 ![image](https://user-images.githubusercontent.com/101462877/202871202-df11d000-9a3a-4cde-b399-1d2a61467b2d.png)
 
-
+## Bir süre geçtikten sonra staking sayfasında node'unuz görünecektir, NODE GÖRÜNDÜKTEN SONRA devam ediyoruz.
             
+![image](https://user-images.githubusercontent.com/101462877/202896547-ecb17a97-920b-4351-ad13-072cadc85d6e.png)
+
+## Ardından validator anahtarını register ediyoruz. Öncelikle aşağıdaki komutu girelim. Yes/no sorusuna `y` diyip enter'lıyoruz.
+            
+```
+sudo chainflip-cli \
+      --config-path /etc/chainflip/config/Default.toml \
+      register-account-role Validator
+```            
+![image](https://user-images.githubusercontent.com/101462877/202896510-e0e983b8-e071-4317-910e-73a44a76a122.png)
+
+## Sonrasında bize bir tx veriyor, [Explorer]()'a giderek tx'in durumuna bakabiliriz.
+            
+![image](https://user-images.githubusercontent.com/101462877/202896591-22a71e87-4b80-4979-83eb-2ab7f236ff0b.png)
+            
+            
+## Son olarak sırasıyla aşağıdaki komutlar ile devam edelim.
+           
+```
+sudo chainflip-cli \
+    --config-path /etc/chainflip/config/Default.toml \
+    activate
+``` 
+            
+```
+sudo chainflip-cli \
+    --config-path /etc/chainflip/config/Default.toml rotate
+``` 
+            
+## Validatorunuze isim vermek isterseniz:
+           
+```
+sudo chainflip-cli \
+    --config-path /etc/chainflip/config/Default.toml \
+    vanity-name <VALIDATOR ADI>
+``` 
