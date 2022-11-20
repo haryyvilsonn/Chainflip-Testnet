@@ -286,3 +286,10 @@ sudo chainflip-cli \
     --config-path /etc/chainflip/config/Default.toml \
     vanity-name <VALIDATOR ADI>
 ``` 
+## Stake ettiğiniz FLIP miktarı minimum active bid miktarının üzerindeyse active set'e girersiniz.
+            
+![image](https://user-images.githubusercontent.com/101462877/202898604-54a39a6c-eaac-4259-9bc7-7bf2ff7fe68f.png)
+
+## [Auctions](https://stake-perseverance.chainflip.io/auctions) sayfasına giderek sayfalar arasında gezinin, validatorunuzu gorebilirsiniz. 
+            
+![image](https://user-images.githubusercontent.com/101462877/202898306-764ac73d-6670-4b19-93ae-aa8150d4dc35.png)
